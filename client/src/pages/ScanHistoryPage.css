@@ -1,0 +1,320 @@
+.history-page {
+  min-height: calc(100vh - 60px);
+  background: #f6f3ec;
+  padding: 32px 16px;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.back-link {
+  background: none;
+  border: none;
+  color: #0b3d3a;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.history-title {
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+  font-size: 24px;
+  color: #10221d;
+  max-width: 640px;
+  margin: 0 auto 20px;
+  margin-top: -60px;
+}
+
+.history-status {
+  max-width: 640px;
+  margin: 0 auto;
+  color: #6b7a72;
+  text-align: center;
+  padding: 24px 0;
+}
+
+.scan-error {
+  max-width: 640px;
+  margin: 0 auto 16px;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 13px;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.history-list {
+  max-width: 640px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.history-card {
+  background: #fffdf8;
+  border: 1px solid #e3ddcd;
+  border-radius: 12px;
+  padding: 18px 20px;
+}
+
+.history-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 6px;
+}
+
+.history-card-top h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #10221d;
+  margin: 0 0 2px;
+}
+
+.history-manufacturer {
+  font-size: 12.5px;
+  color: #6b7a72;
+  margin: 0;
+}
+
+.history-date {
+  font-size: 12px;
+  color: #8a9891;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.history-composition {
+  font-size: 13.5px;
+  color: #3a4a43;
+  margin: 6px 0 10px;
+}
+
+.history-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.history-tag {
+  font-size: 11.5px;
+  background: #e4ece6;
+  color: #0b3d3a;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.history-tag-type {
+  background: #faf1de;
+  color: #92620a;
+  text-transform: capitalize;
+}
+
+.history-card-clickable {
+  cursor: pointer;
+}
+
+.history-toggle-btn {
+  width: 100%;
+  margin-top: 12px;
+  padding: 8px;
+  background: transparent;
+  border: 1px dashed #c9c2ae;
+  border-radius: 7px;
+  color: #0b3d3a;
+  font-weight: 600;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.history-toggle-btn:hover {
+  background: #e4ece6;
+}
+
+.history-expanded {
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid #e3ddcd;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.history-detail-block {
+  background: #fcfaf4;
+  border: 1px solid #e3ddcd;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.detail-med-name {
+  font-family: "Fraunces", serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #10221d;
+  margin: 0 0 2px;
+}
+
+.detail-manufacturer {
+  font-size: 12.5px;
+  color: #6b7a72;
+  margin: 0 0 12px;
+}
+
+.detail-section {
+  margin-top: 18px;
+  margin-bottom: 12px;
+}
+
+.detail-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #8a9891;
+  margin: 0 0 3px;
+}
+
+.detail-list {
+  margin: 0;
+  padding-left: 22px;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+.no-match {
+  color: #b45309;
+  background: #fffbeb;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+}
+
+.history-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.history-card-title {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.history-delete-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 9px;
+  color: #333;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.history-delete-btn:hover {
+  color: #b42318;
+  background: #fff0ef;
+}
+
+.history-delete-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+.history-delete-confirm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 0;
+  padding: 10px 14px;
+  background: #fbd6d6;
+  color: #a11b1b;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.history-delete-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.history-cancel-btn,
+.history-confirm-btn {
+  padding: 9px 18px;
+  border-radius: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.history-cancel-btn {
+  color: #222;
+  background: transparent;
+  border: 1px solid #c9aaaa;
+}
+
+.history-cancel-btn:hover {
+  background: #f5c4c4;
+}
+
+.history-confirm-btn {
+  color: #fff;
+  background: #c62828;
+  border: 1px solid #c62828;
+}
+
+.history-confirm-btn:hover {
+  background: #a91f1f;
+}
+
+.history-cancel-btn:disabled,
+.history-confirm-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 520px) {
+  .history-card-top {
+    gap: 8px;
+  }
+
+  .history-top-right {
+    gap: 6px;
+  }
+
+  .history-date {
+    font-size: 12px;
+  }
+
+  .history-delete-confirm {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .history-delete-actions {
+    align-self: flex-end;
+  }
+}
